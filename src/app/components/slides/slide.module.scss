@@ -1,0 +1,58 @@
+@import '../../media';
+.slide__header {
+  font-size: 2.5rem;
+  padding: 50px 50px;
+  width: 70%;
+  height: 60%;
+  margin-bottom: 1rem;
+  @include media(tablet) {
+    width: 80%;
+    font-size: 2rem;
+    padding: 30px 30px;
+    height: 50%;
+    margin-bottom: 2rem;
+  }
+  @include media(mobile) {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    height: 50%;
+    margin-bottom: 3rem;
+  }
+}
+
+.slide__adv__container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1.2rem;
+  padding: 0;
+  font-weight: 600;
+  @include media(tablet) {
+    font-size: 1rem;
+  }
+  @include media(mobile) {
+    font-size: 0.8rem;
+  }
+}
+.slide__adv {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+}
+.slide__adv__image {
+  margin-right: 4%;
+  width: 10%;
+}
+.slide__background {
+  background-size: 130vh;
+  height: 80vh;
+  @include media(tablet) {
+    background-size: 120vh;
+    height: 75vh;
+  }
+  @include media(mobile) {
+    background-size: 80vh;
+    height: 50vh;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../media';
+.parent {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  @include media(tablet) {
+    display: flex;
+  }
+  > button {
+    @apply cursor-pointer border-none rounded-md outline-none;
+    @include media(mobile) {
+    }
+  }
+  &.active {
+  }
+  .article {
+    @apply text-white text-sm text-left top-8 rounded-md z-10 absolute bg-green-500;
+    width: 10rem;
+    padding-left: 1rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    @include media(mobile) {
+      @apply top-8 px-2 z-20;
+      width: 7rem;
+      font-size: 0.7rem;
+      > p {
+        @apply my-2;
+      }
+    }
+  }
+}

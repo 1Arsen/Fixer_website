@@ -1,0 +1,24 @@
+@import '../../media';
+
+.teknika {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.teknika__text {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0 3rem;
+  @include media(mobile) {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
+.teknika__image {
+  // width: 50%;
+  @include media(mobile) {
+    display: none;
+  }
+}

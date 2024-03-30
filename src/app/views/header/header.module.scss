@@ -1,0 +1,93 @@
+@import '../../media';
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  background-color: #02a653;
+  gap: 64px;
+  margin: 0 0 0 0;
+  font-size: 16px;
+  color: white;
+  z-index: 100;
+  margin-bottom: 1rem;
+  @include media(laptop) {
+    @apply text-xs gap-2 font-medium h-8;
+  }
+}
+.header__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-weight: 600;
+  gap: 30px;
+  @include media(laptop) {
+    @apply text-xs gap-2 font-medium;
+  }
+  @include media(tablet) {
+    display: none;
+  }
+}
+.header__phone {
+  background: whitesmoke;
+  color: #02a653;
+  border: #009349;
+  border-radius: 16px;
+  width: 210px;
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  @include media(laptop) {
+    @apply w-36;
+  }
+}
+.header__phone__number {
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+  @include media(laptop) {
+    @apply text-xs font-medium;
+  }
+}
+
+.menu__button__container {
+  display: none;
+  @include media(tablet) {
+    display: block;
+  }
+}
+.jun__container {
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #eaeaea;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+  @include media(laptop) {
+    height: 32px;
+  }
+  @include media(tablet) {
+    display: none;
+  }
+}
+.jun__list {
+  list-style: none;
+  @apply text-sm gap-7 font-semibold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media(laptop) {
+    @apply text-xs gap-2 font-medium;
+  }
+}
+.jun__list__element {
+  text-align: center;
+  width: auto;
+}
