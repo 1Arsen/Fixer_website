@@ -17,11 +17,11 @@ yarn turbo
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 1. Desktop view
-!['scr1'](/public/screenshots/scr1.png?raw=true)
+!['scr1'](/public/screenshots/scr1.png)
 2. Tablet view
-!['scr2'](/public/screenshots/scr2.png?raw=true)
+!['scr2'](/public/screenshots/scr2.png)
 3. Mobile view
-!['scr3'](/public/screenshots/scr3.png?raw=true)
+!['scr3'](/public/screenshots/scr3.png)
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
