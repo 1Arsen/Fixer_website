@@ -15,7 +15,7 @@ const MapsPage = () => {
     <>
       <div className={s.map__container}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1948.3006025024863!2d48.01958950838573!3d46.32347708338239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a90fbf5b902b53%3A0xb04495fe828b0d17!2z0YPQuy4g0JHQvtC10LLQsNGPIDEt0Lkg0L_RgC3QtCwg0JDRgdGC0YDQsNGF0LDQvdGMLCDQkNGB0YLRgNCw0YXQsNC90YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCA0MTQwMjQ!5e0!3m2!1sru!2suk!4v1709978637345!5m2!1sru!2suk"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5508.7343778821!2d37.53960494565551!3d55.749775310740056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sru!4v1714083107753!5m2!1sen!2sru"
           width="330"
           height="330"
           allowfullscreen=""

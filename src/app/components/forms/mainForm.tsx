@@ -21,8 +21,11 @@ const MainForm = ({ dataForm }: { dataForm: IDataForm }) => {
   const defaultPhone = ''
 
   const [phone, setPhone] = useState(defaultPhone)
-
-  const onSubmit = (data) => {
+  type TData = {
+    'phone-input': string
+    'phone-number': string
+  }
+  const onSubmit = ({ data }: { data: TData }) => {
     console.log(data)
     reset({})
   }
@@ -43,7 +46,6 @@ const MainForm = ({ dataForm }: { dataForm: IDataForm }) => {
           <Controller
             name="phone-input"
             control={control}
-            // maxLength={5}
             rules={{
               validate: (value) => isPossiblePhoneNumber(`${value}`),
 
