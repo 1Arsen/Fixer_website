@@ -20,7 +20,6 @@ const Slide1 = ({ data }: { data: IData }) => {
           className={s.slide__background}
           style={{
             background: `url('/slide/slideCover.svg') left top no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), url('/images/${data.img}') right top no-repeat, lightgray 497px 3px / 91.18% 100.19% no-repeat`,
-            
           }}
         >
           <h1 className={s.slide__header}>

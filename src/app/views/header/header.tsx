@@ -28,7 +28,7 @@ const HeaderPage: NextPage = () => {
       </div>
       <div className={s.menu__container}>
         {/* <input className={s.menu__toggle} type="checkbox" /> */}
-        <HeaderMenuButtonPage className={s.menu__button__container} />
+        <HeaderMenuButtonPage  />
       </div>
     </header>
   )

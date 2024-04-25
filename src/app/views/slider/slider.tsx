@@ -31,10 +31,8 @@ const SliderPage: NextPage = () => {
           clickable: true,
           bulletClass: 'swiper-pagination',
         }}
-        // navigation={true}
         autoplay={true}
       >
-        {/* <div className=".swiper-wrapper"> */}
         <SwiperSlide className="swiper-slide">
           <Slide1
             data={{ device: 'телевизоры', city: 'Москве', img: 'tv.png' }}
@@ -55,20 +53,6 @@ const SliderPage: NextPage = () => {
             data={{ device: 'компьютеры', city: 'Москве', img: 'pc.png' }}
           />
         </SwiperSlide>
-        {/* <SwiperSlide className="swiper-slide">
-          <Slide1
-            data={{
-              device: 'материнские платы',
-              city: 'Москве',
-              img: 'mb.png',
-            }}
-          />
-        </SwiperSlide> */}
-        {/* <SwiperSlide className="swiper-slide">
-          <Slide1
-            data={{ device: 'кондиционеры', city: 'Москве', img: 'cond.png' }}
-          />
-        </SwiperSlide> */}
         <SwiperSlide className="swiper-slide">
           <Slide1
             data={{

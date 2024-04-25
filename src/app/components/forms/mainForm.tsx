@@ -1,7 +1,7 @@
 'use client'
 import s from './mainForm.module.scss'
 import { IDataForm } from '../slides/slide1'
-import { Controller, useForm } from 'react-hook-form'
+import { Controller, useForm, UseFormProps } from 'react-hook-form'
 import PhoneInput, {
   isPossiblePhoneNumber,
 } from 'react-phone-number-input/input'
@@ -10,22 +10,23 @@ import { useState } from 'react'
 import { BiError } from 'react-icons/bi'
 
 const MainForm = ({ dataForm }: { dataForm: IDataForm }) => {
+  type TData = {
+    'phone-input': string
+    'phone-number': string
+  }
   const {
     control,
     handleSubmit,
     reset,
     formState: { errors },
     setValue,
-  } = useForm()
+  } = useForm<TData>()
 
   const defaultPhone = ''
 
   const [phone, setPhone] = useState(defaultPhone)
-  type TData = {
-    'phone-input': string
-    'phone-number': string
-  }
-  const onSubmit = ({ data }: { data: TData }) => {
+
+  const onSubmit = (data: TData) => {
     console.log(data)
     reset({})
   }

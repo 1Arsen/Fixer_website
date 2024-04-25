@@ -54,12 +54,7 @@
   }
 }
 
-.menu__button__container {
-  display: none;
-  @include media(tablet) {
-    display: block;
-  }
-}
+
 .jun__container {
   height: 42px;
   display: flex;
