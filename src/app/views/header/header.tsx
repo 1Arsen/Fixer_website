@@ -24,10 +24,9 @@ const HeaderPage: NextPage = () => {
           height={20}
           className={s.header__phone__image}
         />
-        <span className={s.header__phone__number}>+7 999 888 77 71</span>
+        <span className={s.header__phone__number}>+7 937 138 44 40</span>
       </div>
       <div className={s.menu__container}>
-        {/* <input className={s.menu__toggle} type="checkbox" /> */}
         <HeaderMenuButtonPage  />
       </div>
     </header>
