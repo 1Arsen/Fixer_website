@@ -1,9 +1,6 @@
-import { NextPage } from 'next'
 import s from './slide.module.scss'
 import Image from 'next/image'
-import {} from '@/app/components/slides/slide1'
 import { IData } from '@/app/views/slider/slider'
-import MainForm from '../forms/mainForm'
 
 export interface IDataForm {
   header: string
@@ -13,13 +10,14 @@ export interface IDataForm {
 }
 
 const Slide1 = ({ data }: { data: IData }) => {
+  //`url('/slide/slideCover.svg') left top no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), url('/images/${data.img}') right top no-repeat, lightgray 497px 3px / 91.18% 100.19% no-repeat`
   return (
     <>
       <div className={s.slide}>
         <div
           className={s.slide__background}
           style={{
-            background: `url('/slide/slideCover.svg') left top no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), url('/images/${data.img}') right top no-repeat, lightgray 497px 3px / 91.18% 100.19% no-repeat`,
+            background: `linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgb(255, 255, 255) 100%), url('/images/${data.img}') right no-repeat, lightgray 497px 3px / 91.18% 100.19% no-repeat`,
           }}
         >
           <h1 className={s.slide__header}>

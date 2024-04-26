@@ -6,7 +6,7 @@
   height: 60%;
   margin-bottom: 3rem;
   @include media(tablet) {
-    width: 80%;
+    width: 90%;
     font-size: 2rem;
     padding: 30px 30px;
     height: 50%;
@@ -47,8 +47,8 @@
 .slide__background {
   background-size: 130vh;
   height: 80vh;
+
   @include media(tablet) {
-    background: "url('/slide/slideCover.svg')";
     background-size: 120vh;
     height: 75vh;
   }

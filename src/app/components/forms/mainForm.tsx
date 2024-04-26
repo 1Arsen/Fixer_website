@@ -55,7 +55,7 @@ const MainForm = ({ dataForm }: { dataForm: IDataForm }) => {
             render={({ field: { onChange, value } }) => (
               <PhoneInput
                 value={value}
-                placeHolder="8 990 987 65 43"
+                placeholder="8 990 987 65 43"
                 onChange={onChange}
                 defaultCountry="RU"
                 className={s.number__input}
